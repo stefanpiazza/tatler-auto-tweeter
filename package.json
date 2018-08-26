@@ -1,0 +1,16 @@
+{
+    "name": "tatler-auto-tweeter",
+    "version": "1.0.0",
+    "description": "Tatler Auto Tweeter",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js -e js,json,html"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.18.3",
+        "requests": "^0.2.2",
+        "twitter": "^1.7.1"
+    }
+}
