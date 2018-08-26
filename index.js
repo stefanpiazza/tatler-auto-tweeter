@@ -1,15 +1,13 @@
 'use-strict';
 
-const config = require('./config');
-
 const request = require('request');
 const twitter = require('twitter');
 
 const client = new twitter({
-	consumer_key: config['consumer_key'],
-	consumer_secret: config['consumer_secret'],
-	access_token_key: config['token_key'],
-	access_token_secret: config['token_secret']
+	consumer_key: process.env.CONSUMER_KEY,
+	consumer_secret: process.env.CONSUMER_SECRET,
+	access_token_key: process.env.ACCESS_TOKEN_KEY,
+	access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
 const contentApiUrl = 'https://ta-prod-content-api.condenet.co.uk/2.0/article';
