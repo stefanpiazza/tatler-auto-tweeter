@@ -37,7 +37,7 @@ function autoTweet(currentTime) {
 			for (var i = 0; i < items.length; i++) {
 				if (isPublished(items[i])) {
 					if (isNew(items[i], currentTime)) {
-						// tweet()
+						tweet(items[i]['data']['title'] + ' ' + 'https://www.tatler.com/' + items[i]['data']['content_type'] + '/' + items[i]['data']['slug'])
 					}
 				}
 
